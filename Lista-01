@@ -1,1 +1,1537 @@
+Introdução a Programação - Jacson 
 
+Lista 1, Portugol 
+
+Yan Nicolas Cardoso dos Santos 
+
+2026/1 
+
+ 
+
+ 
+
+1- Aprovado ou Reprovado: 
+
+programa { 
+
+  funcao inicio() { 
+
+    real media=0, nota1=0,nota2=0,nota3=0 
+
+ 
+
+    escreva("Digite a 1° nota:") 
+
+    leia(nota1) 
+
+    escreva("Digite a 2° nota:") 
+
+    leia(nota2) 
+
+    escreva("Digite a 3° nota:") 
+
+    leia(nota3) 
+
+ 
+
+    media= (nota1+nota2+nota3)/3 
+
+    escreva("/Média geral: ",media) 
+
+ 
+
+    se (media >= 6) { 
+
+    escreva(", Aprovado") 
+
+     } 
+
+ 
+
+    senao { 
+
+    escreva(", Reprovado") 
+
+   } 
+
+ 
+
+  } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+2- Arrecadação de Jogos 
+
+ 
+
+programa { 
+
+  funcao inicio() { 
+
+    // Declaração de variáveis 
+
+    inteiro quantidadeJogos, i 
+
+    real valorJogo, arrecadacaoTotal = 0.0, valorMaior = 0.0 
+
+    cadeia nomeJogo, jogoMaisCaro = "" 
+
+ 
+
+    escreva("Quantos jogos foram arrecadados? ") 
+
+    leia(quantidadeJogos) 
+
+ 
+
+    // Limpa o buffer do teclado se necessário 
+
+     
+
+    // Estrutura de repetição para cadastrar os jogos 
+
+    para(i = 1; i <= quantidadeJogos; i++) 
+
+    { 
+
+      escreva("\n--- Jogo ", i, " ---\n") 
+
+      escreva("Nome do jogo: ") 
+
+      leia(nomeJogo) 
+
+      escreva("Valor estimado do jogo: R$ ") 
+
+      leia(valorJogo) 
+
+ 
+
+      // Acumula o valor total 
+
+      arrecadacaoTotal = arrecadacaoTotal + valorJogo 
+
+ 
+
+      // Verifica qual é o jogo mais caro 
+
+      se(valorJogo > valorMaior) 
+
+      { 
+
+        valorMaior = valorJogo 
+
+        jogoMaisCaro = nomeJogo 
+
+      } 
+
+    } 
+
+ 
+
+    // Exibe os resultados 
+
+    escreva("\n==============================") 
+
+    escreva("\nTotal de jogos arrecadados: ", quantidadeJogos) 
+
+    escreva("\nArrecadação Total: R$ ", arrecadacaoTotal) 
+
+    escreva("\nJogo mais caro: ", jogoMaisCaro, " (R$ ", valorMaior, ")") 
+
+    escreva("\n==============================\n") 
+
+  } 
+
+  } 
+
+ 
+
+ 
+
+ 
+
+3- Composição Inteira  
+
+programa { 
+
+  funcao inicio() { 
+
+    inteiro n1, n2, n3, numero, quadrado 
+
+ 
+
+    // 1. Leitura dos dados 
+
+    escreva("Digite o primeiro dígito (n1): ") 
+
+    leia(n1) 
+
+    escreva("Digite o segundo dígito (n2): ") 
+
+    leia(n2) 
+
+    escreva("Digite o terceiro dígito (n3): ") 
+
+    leia(n3) 
+
+ 
+
+    // 2. Validação dos dígitos 
+
+    se (n1 < 0 ou n1 > 9 ou n2 < 0 ou n2 > 9 ou n3 < 0 ou n3 > 9) { 
+
+      escreva("DIGITO INVALIDO") 
+
+    } senao { 
+
+      // 3. Cálculo da concatenação e do quadrado 
+
+      numero = (n1 * 100) + (n2 * 10) + n3 
+
+      quadrado = numero * numero 
+
+ 
+
+      // 4. Exibição dos resultados 
+
+      escreva("Número calculado: ", numero) 
+
+      escreva("\nQuadrado do número: ", quadrado) 
+
+    } 
+
+  } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+4- Consumo de energia  
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real salario_minimo 
+
+        real kw_gastos 
+
+        real valor_100kw 
+
+        real valor_kw 
+
+        real valor_consumo 
+
+        real valor_desconto 
+
+ 
+
+        salario_minimo = 1621 
+
+ 
+
+        escreva("Digite a quantidade de kW gastos: ") 
+
+        leia(kw_gastos) 
+
+ 
+
+        valor_100kw = salario_minimo * 0.7 
+
+        valor_kw = valor_100kw / 100 
+
+ 
+
+        valor_consumo = valor_kw * kw_gastos 
+
+        valor_desconto = valor_consumo * 0.9 
+
+ 
+
+        escreva("Custo por kW: R$ ", valor_kw, "\n") 
+
+        escreva("Custo do consumo: R$ ", valor_consumo, "\n") 
+
+        escreva("Custo com desconto: R$ ", valor_desconto) 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+5- Conta de água 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro conta 
+
+        real consumo 
+
+        real valor 
+
+        cadeia tipo 
+
+ 
+
+        escreva("Digite o numero da conta: ") 
+
+        leia(conta) 
+
+ 
+
+        escreva("Digite o consumo de agua: ") 
+
+        leia(consumo) 
+
+ 
+
+        escreva("Digite o tipo de consumidor (R, C ou I): ") 
+
+        leia(tipo) 
+
+ 
+
+        se (tipo == 'R') 
+
+        { 
+
+            valor = 5 + consumo * 0.05 
+
+        } 
+
+        senao se (tipo == 'C') 
+
+        { 
+
+            valor = 500 + (consumo - 80) * 0.25 
+
+        } 
+
+        senao se (tipo == 'I') 
+
+        { 
+
+            valor = 800 + (consumo - 100) * 0.04 
+
+        } 
+
+ 
+
+        escreva("\nCONTA = ", conta) 
+
+        escreva("\nVALOR DA CONTA = ", valor) 
+
+    }  
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+6- Conversão de temperatura 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro n, i 
+
+        real f, c 
+
+ 
+
+        escreva("Digite quantas temperaturas: ") 
+
+        leia(n) 
+
+ 
+
+        i = 0 
+
+ 
+
+        enquanto (i < n) 
+
+        { 
+
+            escreva("Digite a temperatura em Fahrenheit: ") 
+
+            leia(f) 
+
+ 
+
+            c = 5 * (f - 32) / 9 
+
+ 
+
+            escreva(f, " FAHRENHEIT EQUIVALE A ", c, " CELSIUS\n") 
+
+ 
+
+            i = i + 1 
+
+        } 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+7- Conversões para o sistema métrico 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real fahrenheit 
+
+        real polegadas 
+
+        real celsius 
+
+        real milimetros 
+
+ 
+
+        escreva("Quantos fahrenheit? ") 
+
+        leia(fahrenheit) 
+
+ 
+
+        escreva("Quantas polegadas ") 
+
+        leia(polegadas) 
+
+ 
+
+        celsius = (5 * fahrenheit - 160) / 9 
+
+        milimetros = polegadas * 25.4 
+
+ 
+
+        escreva("O VALOR EM CELSIUS = ", celsius, "\n") 
+
+        escreva("A QUANTIDADE DE CHUVA E = ", milimetros, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+8- Custo da lata de cerveja 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real raio 
+
+        real altura 
+
+        real area_circulo 
+
+        real area_lateral 
+
+        real area_total 
+
+        real custo 
+
+        real pi 
+
+ 
+
+        pi = 3.14159 
+
+ 
+
+        escreva("Qual valor do raio? ") 
+
+        leia(raio) 
+
+        escreva("Qual valor da altura? ") 
+
+        leia(altura) 
+
+ 
+
+        area_circulo = pi * raio * raio 
+
+        area_lateral = 2 * pi * raio * altura 
+
+        area_total = 2 * area_circulo + area_lateral 
+
+ 
+
+        custo = area_total * 100 
+
+ 
+
+        escreva("O VALOR DO CUSTO E = ", custo, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+9- Cálculo do Delta na equação de Bhaskara 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real A 
+
+        real B 
+
+        real C 
+
+        real delta 
+
+ 
+
+        escreva("Qual o valor de A? ") 
+
+        leia(A) 
+
+        escreva("Qual o valor de B ") 
+
+        leia(B) 
+
+        escreva("Qual o valor de C ") 
+
+        leia(C) 
+
+ 
+
+        delta = B * B - 4 * A * C 
+
+ 
+
+        escreva("O VALOR DE DELTA E = ", delta, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+10- Cálculo do Determinante de uma Matriz Quadrada de Duas Di- 
+
+mensões 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real a 
+
+        real b 
+
+        real c 
+
+        real d 
+
+        real determinante 
+
+ 
+
+        escreva("Valor do elemento a? ") 
+
+        leia(a) 
+
+        escreva("Valor do elemento b? ") 
+
+        leia(b) 
+
+        escreva("Valor do elemento c? ") 
+
+        leia(c) 
+
+        escreva("Valor do elemento d? ") 
+
+        leia(d) 
+
+ 
+
+        determinante = a * d - b * c 
+
+ 
+
+        escreva("O VALOR DO DETERMINANTE E = ", determinante, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+11- Divisível por 3 e 5 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro numero 
+
+        escreva("Digite um número: ") 
+
+        leia(numero) 
+
+ 
+
+        se (numero % 3 == 0 e numero % 5 == 0) 
+
+        { 
+
+            escreva("O NUMERO É DIVISIVEL\n") 
+
+        } 
+
+        senao 
+
+        { 
+
+            escreva("O NUMERO NAO É DIVISIVEL\n") 
+
+        } 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+12- Locadora de Charretes 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro horas 
+
+        inteiro grupos 
+
+        inteiro resto 
+
+        real valor 
+
+ 
+
+        escreva("Total de horas de utilização? ") 
+
+        leia(horas) 
+
+ 
+
+        grupos = horas / 3 
+
+        resto = horas % 3 
+
+ 
+
+        valor = (grupos * 10) + (resto * 5) 
+
+ 
+
+        escreva("O VALOR A PAGAR E = ", valor) 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+13- Conversão de nota em conceito 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real nota 
+
+        caracter conceito 
+
+         
+
+        escreva("Digite a nota: ") 
+
+        leia(nota) 
+
+ 
+
+        se (nota >= 9.0) 
+
+        { 
+
+            conceito = 'A' 
+
+        } 
+
+        senao se (nota >= 7.5) 
+
+        { 
+
+            conceito = 'B' 
+
+        } 
+
+        senao se (nota >= 6.0) 
+
+        { 
+
+            conceito = 'C' 
+
+        } 
+
+        senao 
+
+        { 
+
+            conceito = 'D' 
+
+        } 
+
+ 
+
+        escreva("NOTA = ", nota, " CONCEITO = ", conceito, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+14- Volume da Pirâmide de Base Hexagonal 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real h, a, Ab, V 
+
+ 
+
+        escreva("A altura da pirâmide em metros: ") 
+
+        leia(h) 
+
+        escreva("O valor da aresta da base da pirâmide em metros: ") 
+
+        leia(a) 
+
+ 
+
+        Ab = (3 * a * a * 1.73205) / 2 
+
+        V = (Ab * h) / 3 
+
+ 
+
+        escreva("O VOLUME DA PIRAMIDE E = ", V, " METROS CUBICOS\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+15- Quadrado de pares 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro N 
+
+        inteiro i 
+
+        inteiro q 
+
+ 
+
+        leia(N) 
+
+ 
+
+        para(i = 1; i <= N; i++) 
+
+        { 
+
+            se(i % 2 == 0) 
+
+            { 
+
+                q = i * i 
+
+                escreva(i, "^2 = ", q, "\n") 
+
+            } 
+
+        } 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+16- Reajuste salarial  
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        real salario, novo 
+
+        
+
+        escreva("Insira o valor do salário: ") 
+
+        leia(salario) 
+
+ 
+
+        se (salario <= 300) 
+
+        { 
+
+            novo = salario * 1.5 
+
+        } 
+
+        senao 
+
+        { 
+
+            novo = salario * 1.3 
+
+        } 
+
+ 
+
+        escreva("SALARIO COM REAJUSTE = ", novo, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+17- Série de Pares 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro x, y, i 
+
+         
+
+        escreva("Valor de x: ") 
+
+        leia(x) 
+
+        escreva("Valor de y: ") 
+
+        leia(y) 
+
+ 
+
+        se (x % 2 == 0) 
+
+        { 
+
+            para(i = 0; i < y; i++) 
+
+            { 
+
+                escreva(x + i*2, " ") 
+
+            } 
+
+            escreva("\n") 
+
+        } 
+
+        senao 
+
+        { 
+
+            escreva("O PRIMEIRO NUMERO NAO E PAR\n") 
+
+        } 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+18- Soma de progressão aritmética 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro a1, r, n, i, soma, termo 
+
+ 
+
+       escreva("Qual o valor inicial? ") 
+
+        leia(a1) 
+
+        escreva("Qual a razão? ") 
+
+        leia(r) 
+
+        escreva("Qual o número de elementos? ") 
+
+        leia(n) 
+
+ 
+
+        soma = 0 
+
+        termo = a1 
+
+ 
+
+        para(i = 0; i < n; i++) 
+
+        { 
+
+            soma = soma + termo 
+
+            termo = termo + r 
+
+        } 
+
+ 
+
+        escreva("Resultado: ") 
+
+        escreva(soma, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+19- Somatório Simples 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro n, i 
+
+        real S 
+
+        
+
+        escreva("Digite um número: ") 
+
+        leia(n) 
+
+ 
+
+        se (n <= 1) 
+
+        { 
+
+            escreva("Nùmero invalido!\n") 
+
+        } 
+
+        senao 
+
+        { 
+
+            S = 0.0 
+
+ 
+
+            para(i = 1; i <= n; i++) 
+
+            { 
+
+                S = S + 1.0 / i 
+
+            } 
+
+ 
+
+            escreva(S, "\n") 
+
+        } 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+20- Tempo em segundos 
+
+programa 
+
+{ 
+
+    funcao inicio() 
+
+    { 
+
+        inteiro h, m, s, total 
+
+        escreva("Horas: ") 
+
+        leia(h) 
+
+        escreva("Minutos: ") 
+
+        leia(m) 
+
+        escreva("Segundos: ") 
+
+        leia(s) 
+
+ 
+
+        total = h * 3600 + m * 60 + s 
+
+ 
+
+        escreva("O TEMPO EM SEGUNDOS E = ", total, "\n") 
+
+    } 
+
+} 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
