@@ -1,0 +1,97 @@
+Atividades realizadas na sala de aula 
+data: 16/03/2026
+
+Problema 1: Faça um programa que leia três números inteiros e imprima tais números em ordem crescente.
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro a, b, c, aux
+
+        escreva("Digite o primeiro número: ")
+        leia(a)
+
+        escreva("Digite o segundo número: ")
+        leia(b)
+
+        escreva("Digite o terceiro número: ")
+        leia(c)
+
+        // Coloca a e b em ordem
+        se (a > b)
+        {
+            aux = a
+            a = b
+            b = aux
+        }
+
+        // Coloca a e c em ordem
+        se (a > c)
+        {
+            aux = a
+            a = c
+            c = aux
+        }
+
+        // Coloca b e c em ordem
+        se (b > c)
+        {
+            aux = b
+            b = c
+            c = aux
+        }
+
+        escreva("Ordem crescente: ", a, " ", b, " ", c)
+    }
+}
+
+Problema 2: Faça um programa que leia três números e determine qual é o maior número lido.
+
+programa {
+  funcao inicio() {
+    inteiro a, b, c
+
+    escreva("Digite o primeiro numero: ")
+    leia(a)
+    escreva("Digite o segundo numero: ")
+    leia(b) 
+    escreva("Digite o terceiro numero: ")
+    leia(c)
+
+      escreva("Maior numero: ")
+ 
+    se (a>b e a>c)
+    escreva(a)
+
+    se (c>a e c>b)
+    escreva(c)
+
+    se (b>a e b>c)
+    escreva(b)
+
+  }
+}
+
+Problema 3: Faça um programa que leia o valor de uma mercadoria e o percentual de desconto e calcule e imprima o valor do desconto e o novo valor da mercadoria após o desconto.
+
+programa
+{
+    funcao inicio()
+    {
+        real valor, percentual, desconto, novo_valor
+
+        escreva("Digite o valor da mercadoria: ")
+        leia(valor)
+
+        escreva("Digite o percentual de desconto: ")
+        leia(percentual)
+
+        desconto = valor * percentual / 100
+        novo_valor = valor - desconto
+
+        escreva("Valor do desconto: ", desconto, "\n")
+        escreva("Novo valor: ", novo_valor)
+    }
+}
+
