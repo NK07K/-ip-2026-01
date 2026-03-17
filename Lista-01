@@ -7,9 +7,6 @@ Yan Nicolas Cardoso dos Santos
 2026/1 
 
  
-
- 
-
 1- Aprovado ou Reprovado: 
 
 programa { 
@@ -60,27 +57,7 @@ programa {
 
 } 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 2- Arrecadação de Jogos 
 
@@ -168,10 +145,6 @@ programa {
 
  
 
- 
-
- 
-
 3- Composição Inteira  
 
 programa { 
@@ -228,27 +201,6 @@ programa {
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 4- Consumo de energia  
 
@@ -305,28 +257,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -402,19 +332,6 @@ programa
 
 } 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 6- Conversão de temperatura 
 
@@ -467,31 +384,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
  
 
 7- Conversões para o sistema métrico 
@@ -539,34 +431,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -626,28 +490,7 @@ programa
 
     } 
 
-} 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
+}
  
 
 9- Cálculo do Delta na equação de Bhaskara 
@@ -694,35 +537,7 @@ programa
 
 } 
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 10- Cálculo do Determinante de uma Matriz Quadrada de Duas Di- 
 
@@ -776,31 +591,6 @@ programa
 
 } 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 11- Divisível por 3 e 5 
 
@@ -842,37 +632,6 @@ programa
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 12- Locadora de Charretes 
 
@@ -918,35 +677,6 @@ programa
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 13- Conversão de nota em conceito 
 
@@ -1012,23 +742,6 @@ programa
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 14- Volume da Pirâmide de Base Hexagonal 
 
@@ -1066,39 +779,6 @@ programa
 
 } 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -1146,36 +826,6 @@ programa
 
  
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
 16- Reajuste salarial  
 
 programa 
@@ -1219,34 +869,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -1304,29 +926,7 @@ programa
 
  
 
- 
 
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
 18- Soma de progressão aritmética 
 
@@ -1381,28 +981,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
@@ -1461,28 +1039,6 @@ programa
     } 
 
 } 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
-
- 
 
  
 
