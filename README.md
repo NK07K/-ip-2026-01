@@ -1,6 +1,6 @@
 # 🏥 VitaCare — Sistema de Gestão em Saúde
 
-Servidor HTTP em **GoLang** com CRUD completo de usuários, usando **PostgreSQL** como banco de dados e interface web elegante com tema de saúde.
+Servidor HTTP em **GoLang** com CRUD completo de usuários, usando **PostgreSQL** como banco de dados e interface web com tema de saúde.
 
 ---
 
