@@ -1,7 +1,15 @@
 # 🏥 VitaCare — Sistema de Gestão em Saúde
 
-Servidor HTTP em **GoLang** com CRUD completo de usuários, usando **PostgreSQL** como banco de dados e interface web com tema de saúde.
+Servidor HTTP em **GoLang** com CRUD de usuários, usando **PostgreSQL** como banco de dados e interface web com tema de saúde.
 
+intalar dependecias 
+- go mod tidy
+
+rodar - 
+bashgo run app/main.go
+
+Abra no navegador -
+http://127.0.0.1:3000
 ---
 
 ## Estrutura do Projeto
