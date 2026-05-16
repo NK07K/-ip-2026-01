@@ -49,7 +49,7 @@ servidorHTTP/
 - [Go 1.21+](https://go.dev/dl/)
 - [PostgreSQL 15+](https://www.postgresql.org/) ou [Docker](https://www.docker.com/)
 
-### 2. Clone e configure o `.env`
+### 2. Clonar e configurar o `.env`
 ```bash
 git clone <URL_DO_REPOSITORIO>
 cd servidorHTTP
@@ -65,22 +65,22 @@ DB_HOST=localhost
 DB_PORT=5432
 ```
 
-### 3. Suba o banco com Docker
+### 3. Subir o banco com Docker
 ```bash
 docker compose up -d
 ```
 
-### 4. Crie a tabela
+### 4. Criar a tabela
 ```bash
 psql -h localhost -U saude_user -d saude_db -f schema.sql
 ```
 
-### 5. Instale dependências
+### 5. Instalar dependências
 ```bash
 go mod tidy
 ```
 
-### 6. Inicie o servidor
+### 6. Iniciar o servidor
 ```bash
 go run app/main.go
 ```
