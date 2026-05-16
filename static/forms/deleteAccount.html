@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excluir Conta — VitaCare</title>
+  <link rel="stylesheet" href="/styles/deleteAccount.style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-blob"></div>
+
+  <div class="page-wrapper">
+    <a href="/" class="back-link">← Voltar</a>
+
+    <div class="form-card form-card--danger">
+      <div class="form-header">
+        <span class="form-icon">🗑️</span>
+        <h1>Excluir Conta</h1>
+        <p>Esta ação é <strong>permanente</strong> e não pode ser desfeita.</p>
+      </div>
+
+      <div class="warning-box">
+        ⚠️ Ao confirmar, todos os seus dados serão removidos permanentemente do sistema.
+      </div>
+
+      <form action="/api/delete" method="POST" class="form">
+        <div class="field">
+          <label for="email">E-mail da conta</label>
+          <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Senha</label>
+          <input type="password" id="password" name="password" placeholder="Confirme sua senha" required>
+        </div>
+
+        <button type="submit" class="btn-submit btn-danger">Excluir minha conta</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

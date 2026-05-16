@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atualizar Conta — VitaCare</title>
+  <link rel="stylesheet" href="/styles/updateAccount.style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-blob"></div>
+
+  <div class="page-wrapper">
+    <a href="/" class="back-link">← Voltar</a>
+
+    <div class="form-card">
+      <div class="form-header">
+        <span class="form-icon">✏️</span>
+        <h1>Atualizar Conta</h1>
+        <p>Informe seus dados atuais e os novos dados desejados.</p>
+      </div>
+
+      <form action="/api/update" method="POST" class="form">
+        <fieldset class="fieldset">
+          <legend>Dados atuais (para verificação)</legend>
+
+          <div class="field">
+            <label for="current_email">E-mail atual</label>
+            <input type="email" id="current_email" name="current_email" placeholder="atual@email.com" required>
+          </div>
+
+          <div class="field">
+            <label for="current_password">Senha atual</label>
+            <input type="password" id="current_password" name="current_password" placeholder="••••••••" required>
+          </div>
+        </fieldset>
+
+        <fieldset class="fieldset">
+          <legend>Novos dados</legend>
+
+          <div class="field">
+            <label for="new_username">Novo nome</label>
+            <input type="text" id="new_username" name="new_username" placeholder="Novo nome completo" required minlength="3">
+          </div>
+
+          <div class="field">
+            <label for="new_email">Novo e-mail</label>
+            <input type="email" id="new_email" name="new_email" placeholder="novo@email.com" required>
+          </div>
+
+          <div class="field">
+            <label for="new_born_date">Nova data de nascimento</label>
+            <input type="date" id="new_born_date" name="new_born_date" required>
+          </div>
+
+          <div class="field">
+            <label for="new_password">Nova senha</label>
+            <input type="password" id="new_password" name="new_password" placeholder="Mínimo 6 caracteres" required minlength="6">
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn-submit">Salvar alterações</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
